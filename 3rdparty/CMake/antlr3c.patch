@@ -1,0 +1,906 @@
+diff -u -N old/C.sln new/C.sln
+--- old/C.sln	2009-12-11 23:54:59.000000000 +0100
++++ new/C.sln	2017-03-22 12:31:50.730832300 +0100
+@@ -1,53 +1,45 @@
+-Microsoft Visual Studio Solution File, Format Version 10.00
+-# Visual Studio 2008
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C", "C.vcproj", "{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}"
+-EndProject
+-Global
+-	GlobalSection(SourceCodeControl) = preSolution
+-		SccNumberOfProjects = 2
+-		SccProjectName0 = Perforce\u0020Project
+-		SccLocalPath0 = ..\\..
+-		SccProvider0 = MSSCCI:Perforce\u0020SCM
+-		SccProjectFilePathRelativizedFromConnection0 = runtime\\C\\
+-		SccProjectUniqueName1 = C.vcproj
+-		SccLocalPath1 = ..\\..
+-		SccProjectFilePathRelativizedFromConnection1 = runtime\\C\\
+-	EndGlobalSection
+-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+-		Debug|Win32 = Debug|Win32
+-		Debug|x64 = Debug|x64
+-		DebugDLL|Win32 = DebugDLL|Win32
+-		DebugDLL|x64 = DebugDLL|x64
+-		Deployment|Win32 = Deployment|Win32
+-		Deployment|x64 = Deployment|x64
+-		Release|Win32 = Release|Win32
+-		Release|x64 = Release|x64
+-		ReleaseDLL|Win32 = ReleaseDLL|Win32
+-		ReleaseDLL|x64 = ReleaseDLL|x64
+-	EndGlobalSection
+-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|Win32.ActiveCfg = Debug|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|Win32.Build.0 = Debug|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|x64.ActiveCfg = Debug|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|x64.Build.0 = Debug|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|Win32.ActiveCfg = DebugDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|Win32.Build.0 = DebugDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|x64.ActiveCfg = DebugDLL|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|x64.Build.0 = DebugDLL|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|Win32.ActiveCfg = DebugDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|Win32.Build.0 = DebugDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|x64.ActiveCfg = DebugDLL|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|x64.Build.0 = DebugDLL|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|Win32.ActiveCfg = Release|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|Win32.Build.0 = Release|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|x64.ActiveCfg = Release|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|x64.Build.0 = Release|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.ActiveCfg = ReleaseDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.Build.0 = ReleaseDLL|Win32
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|x64.ActiveCfg = ReleaseDLL|x64
+-		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|x64.Build.0 = ReleaseDLL|x64
+-	EndGlobalSection
+-	GlobalSection(SolutionProperties) = preSolution
+-		HideSolutionNode = FALSE
+-	EndGlobalSection
+-EndGlobal
++Microsoft Visual Studio Solution File, Format Version 12.00
++# Visual Studio 14
++VisualStudioVersion = 14.0.25420.1
++MinimumVisualStudioVersion = 10.0.40219.1
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C", "C.vcxproj", "{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}"
++EndProject
++Global
++	GlobalSection(SolutionConfigurationPlatforms) = preSolution
++		Debug|Win32 = Debug|Win32
++		Debug|x64 = Debug|x64
++		DebugDLL|Win32 = DebugDLL|Win32
++		DebugDLL|x64 = DebugDLL|x64
++		Deployment|Win32 = Deployment|Win32
++		Deployment|x64 = Deployment|x64
++		Release|Win32 = Release|Win32
++		Release|x64 = Release|x64
++		ReleaseDLL|Win32 = ReleaseDLL|Win32
++		ReleaseDLL|x64 = ReleaseDLL|x64
++	EndGlobalSection
++	GlobalSection(ProjectConfigurationPlatforms) = postSolution
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|Win32.ActiveCfg = Debug|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|Win32.Build.0 = Debug|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|x64.ActiveCfg = Debug|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Debug|x64.Build.0 = Debug|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|Win32.ActiveCfg = DebugDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|Win32.Build.0 = DebugDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|x64.ActiveCfg = DebugDLL|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.DebugDLL|x64.Build.0 = DebugDLL|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|Win32.ActiveCfg = DebugDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|Win32.Build.0 = DebugDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|x64.ActiveCfg = DebugDLL|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Deployment|x64.Build.0 = DebugDLL|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|Win32.ActiveCfg = Release|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|Win32.Build.0 = Release|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|x64.ActiveCfg = Release|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.Release|x64.Build.0 = Release|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.ActiveCfg = ReleaseDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.Build.0 = ReleaseDLL|Win32
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|x64.ActiveCfg = ReleaseDLL|x64
++		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|x64.Build.0 = ReleaseDLL|x64
++	EndGlobalSection
++	GlobalSection(SolutionProperties) = preSolution
++		HideSolutionNode = FALSE
++	EndGlobalSection
++EndGlobal
+diff -u -N old/C.vcxproj new/C.vcxproj
+--- old/C.vcxproj	1970-01-01 01:00:00.000000000 +0100
++++ new/C.vcxproj	2017-03-22 12:31:52.087806100 +0100
+@@ -0,0 +1,538 @@
++﻿<?xml version="1.0" encoding="utf-8"?>
++<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
++  <ItemGroup Label="ProjectConfigurations">
++    <ProjectConfiguration Include="DebugDLL|Win32">
++      <Configuration>DebugDLL</Configuration>
++      <Platform>Win32</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="DebugDLL|x64">
++      <Configuration>DebugDLL</Configuration>
++      <Platform>x64</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="Debug|Win32">
++      <Configuration>Debug</Configuration>
++      <Platform>Win32</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="Debug|x64">
++      <Configuration>Debug</Configuration>
++      <Platform>x64</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="ReleaseDLL|Win32">
++      <Configuration>ReleaseDLL</Configuration>
++      <Platform>Win32</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="ReleaseDLL|x64">
++      <Configuration>ReleaseDLL</Configuration>
++      <Platform>x64</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="Release|Win32">
++      <Configuration>Release</Configuration>
++      <Platform>Win32</Platform>
++    </ProjectConfiguration>
++    <ProjectConfiguration Include="Release|x64">
++      <Configuration>Release</Configuration>
++      <Platform>x64</Platform>
++    </ProjectConfiguration>
++  </ItemGroup>
++  <PropertyGroup Label="Globals">
++    <ProjectGuid>{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}</ProjectGuid>
++    <RootNamespace>C</RootNamespace>
++    <SccProjectName>Perforce Project</SccProjectName>
++    <SccLocalPath>..\..</SccLocalPath>
++    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
++    <Keyword>Win32Proj</Keyword>
++  </PropertyGroup>
++  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
++    <ConfigurationType>DynamicLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
++    <ConfigurationType>DynamicLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++    <WholeProgramOptimization>true</WholeProgramOptimization>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
++    <ConfigurationType>StaticLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
++    <ConfigurationType>StaticLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
++    <ConfigurationType>DynamicLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
++    <ConfigurationType>DynamicLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++    <WholeProgramOptimization>true</WholeProgramOptimization>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
++    <ConfigurationType>StaticLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
++    <ConfigurationType>StaticLibrary</ConfigurationType>
++    <PlatformToolset>v140</PlatformToolset>
++    <CharacterSet>MultiByte</CharacterSet>
++  </PropertyGroup>
++  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
++  <ImportGroup Label="ExtensionSettings">
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
++    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
++    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
++  </ImportGroup>
++  <PropertyGroup Label="UserMacros" />
++  <PropertyGroup>
++    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
++    <OutDir>Debug\</OutDir>
++    <IntDir>Debug\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
++    <OutDir>$(Platform)\$(Configuration)\</OutDir>
++    <IntDir>$(Platform)\$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
++    <OutDir>Release\</OutDir>
++    <IntDir>Release\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
++    <OutDir>$(Platform)\$(Configuration)\</OutDir>
++    <IntDir>$(Platform)\$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
++    <OutDir>$(Configuration)\</OutDir>
++    <IntDir>$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
++    <OutDir>$(Platform)\$(Configuration)\</OutDir>
++    <IntDir>$(Platform)\$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
++    <OutDir>$(Configuration)\</OutDir>
++    <IntDir>$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
++    <OutDir>$(Platform)\$(Configuration)\</OutDir>
++    <IntDir>$(Platform)\$(Configuration)\</IntDir>
++  </PropertyGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
++    <ClCompile>
++      <Optimization>Disabled</Optimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <MinimalRebuild>false</MinimalRebuild>
++      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
++      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
++      <StructMemberAlignment>Default</StructMemberAlignment>
++      <FunctionLevelLinking>true</FunctionLevelLinking>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Precise</FloatingPointModel>
++      <FloatingPointExceptions>true</FloatingPointExceptions>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <PrecompiledHeader />
++      <ExpandAttributedSource>true</ExpandAttributedSource>
++      <AssemblerOutput>All</AssemblerOutput>
++      <BrowseInformation>true</BrowseInformation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>false</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Lib>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3cd.lib</OutputFile>
++    </Lib>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
++    <Midl>
++      <TargetEnvironment>X64</TargetEnvironment>
++    </Midl>
++    <ClCompile>
++      <Optimization>Disabled</Optimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <MinimalRebuild>false</MinimalRebuild>
++      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
++      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
++      <StructMemberAlignment>Default</StructMemberAlignment>
++      <FunctionLevelLinking>true</FunctionLevelLinking>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Precise</FloatingPointModel>
++      <FloatingPointExceptions>true</FloatingPointExceptions>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <PrecompiledHeader />
++      <ExpandAttributedSource>true</ExpandAttributedSource>
++      <AssemblerOutput>All</AssemblerOutput>
++      <BrowseInformation>true</BrowseInformation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>false</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Lib>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3cd.lib</OutputFile>
++    </Lib>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
++    <ClCompile>
++      <Optimization>Full</Optimization>
++      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
++      <IntrinsicFunctions>true</IntrinsicFunctions>
++      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
++      <OmitFramePointers>true</OmitFramePointers>
++      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
++      <WholeProgramOptimization>true</WholeProgramOptimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <ExceptionHandling>Sync</ExceptionHandling>
++      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
++      <BufferSecurityCheck>false</BufferSecurityCheck>
++      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Fast</FloatingPointModel>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <RuntimeTypeInfo>false</RuntimeTypeInfo>
++      <PrecompiledHeader />
++      <AssemblerListingLocation>.\asm\release</AssemblerListingLocation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>true</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>CompileAsC</CompileAs>
++    </ClCompile>
++    <Lib>
++      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3c.lib</OutputFile>
++    </Lib>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
++    <Midl>
++      <TargetEnvironment>X64</TargetEnvironment>
++    </Midl>
++    <ClCompile>
++      <Optimization>Full</Optimization>
++      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
++      <IntrinsicFunctions>true</IntrinsicFunctions>
++      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
++      <OmitFramePointers>true</OmitFramePointers>
++      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
++      <WholeProgramOptimization>true</WholeProgramOptimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <ExceptionHandling>Sync</ExceptionHandling>
++      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
++      <BufferSecurityCheck>false</BufferSecurityCheck>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Fast</FloatingPointModel>
++      <RuntimeTypeInfo>false</RuntimeTypeInfo>
++      <PrecompiledHeader />
++      <AssemblerListingLocation>.\asm\release</AssemblerListingLocation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>true</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>CompileAsC</CompileAs>
++    </ClCompile>
++    <Lib>
++      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3c.lib</OutputFile>
++    </Lib>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
++    <ClCompile>
++      <Optimization>Full</Optimization>
++      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
++      <IntrinsicFunctions>true</IntrinsicFunctions>
++      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
++      <OmitFramePointers>true</OmitFramePointers>
++      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
++      <WholeProgramOptimization>true</WholeProgramOptimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <ExceptionHandling>Sync</ExceptionHandling>
++      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
++      <BufferSecurityCheck>false</BufferSecurityCheck>
++      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Fast</FloatingPointModel>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <RuntimeTypeInfo>false</RuntimeTypeInfo>
++      <PrecompiledHeader />
++      <AssemblerListingLocation>.\asm\release</AssemblerListingLocation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>true</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Link>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3c.dll</OutputFile>
++      <Version>3.1.1</Version>
++      <OptimizeReferences>true</OptimizeReferences>
++      <EnableCOMDATFolding>true</EnableCOMDATFolding>
++      <RandomizedBaseAddress>false</RandomizedBaseAddress>
++      <DataExecutionPrevention />
++      <ImportLibrary>$(TargetDir)$(TargetName)_dll.lib</ImportLibrary>
++    </Link>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
++    <Midl>
++      <TargetEnvironment>X64</TargetEnvironment>
++    </Midl>
++    <ClCompile>
++      <Optimization>Full</Optimization>
++      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
++      <IntrinsicFunctions>true</IntrinsicFunctions>
++      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
++      <OmitFramePointers>true</OmitFramePointers>
++      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
++      <WholeProgramOptimization>true</WholeProgramOptimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <ExceptionHandling>Sync</ExceptionHandling>
++      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
++      <BufferSecurityCheck>false</BufferSecurityCheck>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Fast</FloatingPointModel>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <RuntimeTypeInfo>false</RuntimeTypeInfo>
++      <PrecompiledHeader />
++      <AssemblerListingLocation>.\asm\release</AssemblerListingLocation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>true</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Link>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3c64.dll</OutputFile>
++      <Version>3.1.1</Version>
++      <OptimizeReferences>true</OptimizeReferences>
++      <EnableCOMDATFolding>true</EnableCOMDATFolding>
++      <RandomizedBaseAddress>false</RandomizedBaseAddress>
++      <DataExecutionPrevention />
++      <ImportLibrary>$(TargetDir)$(TargetName)_dll.lib</ImportLibrary>
++      <TargetMachine>MachineX64</TargetMachine>
++    </Link>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
++    <CustomBuildStep>
++      <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
++    </CustomBuildStep>
++    <ClCompile>
++      <Optimization>Disabled</Optimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <MinimalRebuild>false</MinimalRebuild>
++      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
++      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
++      <StructMemberAlignment>Default</StructMemberAlignment>
++      <FunctionLevelLinking>true</FunctionLevelLinking>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Precise</FloatingPointModel>
++      <FloatingPointExceptions>true</FloatingPointExceptions>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <PrecompiledHeader />
++      <ExpandAttributedSource>true</ExpandAttributedSource>
++      <AssemblerOutput>All</AssemblerOutput>
++      <BrowseInformation>true</BrowseInformation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>false</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Link>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3cd.dll</OutputFile>
++      <Version>3.1.1</Version>
++      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <RandomizedBaseAddress>false</RandomizedBaseAddress>
++      <DataExecutionPrevention />
++      <ImportLibrary>$(TargetDir)$(TargetName)_dll.lib</ImportLibrary>
++    </Link>
++  </ItemDefinitionGroup>
++  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
++    <CustomBuildStep>
++      <Outputs>$(TargetDir)$(TargetName)_dll.lib;%(Outputs)</Outputs>
++    </CustomBuildStep>
++    <Midl>
++      <TargetEnvironment>X64</TargetEnvironment>
++    </Midl>
++    <ClCompile>
++      <Optimization>Disabled</Optimization>
++      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <StringPooling>true</StringPooling>
++      <MinimalRebuild>false</MinimalRebuild>
++      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
++      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
++      <StructMemberAlignment>Default</StructMemberAlignment>
++      <FunctionLevelLinking>true</FunctionLevelLinking>
++      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
++      <FloatingPointModel>Precise</FloatingPointModel>
++      <FloatingPointExceptions>true</FloatingPointExceptions>
++      <DisableLanguageExtensions>false</DisableLanguageExtensions>
++      <PrecompiledHeader />
++      <ExpandAttributedSource>true</ExpandAttributedSource>
++      <AssemblerOutput>All</AssemblerOutput>
++      <BrowseInformation>true</BrowseInformation>
++      <WarningLevel>Level4</WarningLevel>
++      <TreatWarningAsError>false</TreatWarningAsError>
++      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <CallingConvention>Cdecl</CallingConvention>
++      <CompileAs>Default</CompileAs>
++    </ClCompile>
++    <Link>
++      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
++      <OutputFile>$(OutDir)antlr3c64d.dll</OutputFile>
++      <Version>3.1.1</Version>
++      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <RandomizedBaseAddress>false</RandomizedBaseAddress>
++      <DataExecutionPrevention />
++      <ImportLibrary>$(TargetDir)$(TargetName)_dll.lib</ImportLibrary>
++      <TargetMachine>MachineX64</TargetMachine>
++    </Link>
++  </ItemDefinitionGroup>
++  <ItemGroup>
++    <ClCompile Include="src\antlr3baserecognizer.c" />
++    <ClCompile Include="src\antlr3basetree.c" />
++    <ClCompile Include="src\antlr3basetreeadaptor.c" />
++    <ClCompile Include="src\antlr3bitset.c" />
++    <ClCompile Include="src\antlr3collections.c" />
++    <ClCompile Include="src\antlr3commontoken.c" />
++    <ClCompile Include="src\antlr3commontree.c" />
++    <ClCompile Include="src\antlr3commontreeadaptor.c" />
++    <ClCompile Include="src\antlr3commontreenodestream.c" />
++    <ClCompile Include="src\antlr3convertutf.c" />
++    <ClCompile Include="src\antlr3cyclicdfa.c" />
++    <ClCompile Include="src\antlr3debughandlers.c" />
++    <ClCompile Include="src\antlr3encodings.c" />
++    <ClCompile Include="src\antlr3exception.c" />
++    <ClCompile Include="src\antlr3filestream.c" />
++    <ClCompile Include="src\antlr3inputstream.c" />
++    <ClCompile Include="src\antlr3intstream.c" />
++    <ClCompile Include="src\antlr3lexer.c" />
++    <ClCompile Include="src\antlr3parser.c" />
++    <ClCompile Include="src\antlr3rewritestreams.c" />
++    <ClCompile Include="src\antlr3string.c" />
++    <ClCompile Include="src\antlr3stringstream.c" />
++    <ClCompile Include="src\antlr3tokenstream.c" />
++    <ClCompile Include="src\antlr3treeparser.c" />
++    <ClCompile Include="src\antlr3ucs2inputstream.c" />
++  </ItemGroup>
++  <ItemGroup>
++    <ClInclude Include="include\antlr3.h" />
++    <ClInclude Include="include\antlr3baserecognizer.h" />
++    <ClInclude Include="include\antlr3basetree.h" />
++    <ClInclude Include="include\antlr3basetreeadaptor.h" />
++    <ClInclude Include="include\antlr3bitset.h" />
++    <ClInclude Include="include\antlr3collections.h" />
++    <ClInclude Include="include\antlr3commontoken.h" />
++    <ClInclude Include="include\antlr3commontree.h" />
++    <ClInclude Include="include\antlr3commontreeadaptor.h" />
++    <ClInclude Include="include\antlr3commontreenodestream.h" />
++    <ClInclude Include="include\antlr3convertutf.h" />
++    <ClInclude Include="include\antlr3cyclicdfa.h" />
++    <ClInclude Include="include\antlr3debugeventlistener.h" />
++    <ClInclude Include="include\antlr3defs.h" />
++    <ClInclude Include="include\antlr3encodings.h" />
++    <ClInclude Include="include\antlr3errors.h" />
++    <ClInclude Include="include\antlr3exception.h" />
++    <ClInclude Include="include\antlr3filestream.h" />
++    <ClInclude Include="include\antlr3input.h" />
++    <ClInclude Include="include\antlr3interfaces.h" />
++    <ClInclude Include="include\antlr3intstream.h" />
++    <ClInclude Include="include\antlr3lexer.h" />
++    <ClInclude Include="include\antlr3memory.h" />
++    <ClInclude Include="include\antlr3parser.h" />
++    <ClInclude Include="include\antlr3parsetree.h" />
++    <ClInclude Include="include\antlr3recognizersharedstate.h" />
++    <ClInclude Include="include\antlr3rewritestreams.h" />
++    <ClInclude Include="include\antlr3string.h" />
++    <ClInclude Include="include\antlr3stringstream.h" />
++    <ClInclude Include="include\antlr3tokenstream.h" />
++    <ClInclude Include="include\antlr3treeparser.h" />
++  </ItemGroup>
++  <ItemGroup>
++    <None Include="..\..\tool\src\main\java\org\antlr\codegen\CTarget.java" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\ANTLRCore.sti" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\AST.stg" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTDbg.stg" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTParser.stg" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTTreeParser.stg" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\C.stg" />
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\Dbg.stg" />
++    <None Include="doxygen\atsections.dox" />
++    <None Include="doxygen\build.dox" />
++    <None Include="doxygen\buildrec.dox" />
++    <None Include="doxygen\changes31.dox" />
++    <None Include="doxygen\doxygengroups.dox" />
++    <None Include="doxygen\generate.dox" />
++    <None Include="doxygen\interop.dox" />
++    <None Include="doxygen\mainpage.dox" />
++    <None Include="doxygen\runtime.dox" />
++    <None Include="doxygen\using.dox" />
++  </ItemGroup>
++  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
++  <ImportGroup Label="ExtensionTargets">
++  </ImportGroup>
++  <ProjectExtensions>
++    <VisualStudio>
++      <UserProperties DevPartner_IsInstrumented="0" />
++    </VisualStudio>
++  </ProjectExtensions>
++</Project>
+\ No newline at end of file
+diff -u -N old/C.vcxproj.filters new/C.vcxproj.filters
+--- old/C.vcxproj.filters	1970-01-01 01:00:00.000000000 +0100
++++ new/C.vcxproj.filters	2017-03-22 12:31:50.637247900 +0100
+@@ -0,0 +1,256 @@
++﻿<?xml version="1.0" encoding="utf-8"?>
++<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
++  <ItemGroup>
++    <Filter Include="Source Files">
++      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
++      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
++    </Filter>
++    <Filter Include="Header Files">
++      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
++      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
++    </Filter>
++    <Filter Include="Templates">
++      <UniqueIdentifier>{c8e62408-c35c-4977-901f-714f87d3edd7}</UniqueIdentifier>
++      <Extensions>.stg</Extensions>
++    </Filter>
++    <Filter Include="Templates\Interfaces">
++      <UniqueIdentifier>{47ab4ce7-506a-4528-b109-844e5a48f822}</UniqueIdentifier>
++      <Extensions>*.sti</Extensions>
++    </Filter>
++    <Filter Include="Java">
++      <UniqueIdentifier>{a9d359a2-d26c-4c38-a1d1-4b297e2b6e13}</UniqueIdentifier>
++      <Extensions>*.java</Extensions>
++    </Filter>
++    <Filter Include="Doxygen">
++      <UniqueIdentifier>{4812fc21-6c01-4850-8814-4554afb38a90}</UniqueIdentifier>
++    </Filter>
++  </ItemGroup>
++  <ItemGroup>
++    <ClCompile Include="src\antlr3baserecognizer.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3basetree.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3basetreeadaptor.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3bitset.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3collections.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3commontoken.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3commontree.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3commontreeadaptor.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3commontreenodestream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3convertutf.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3cyclicdfa.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3debughandlers.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3encodings.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3exception.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3filestream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3inputstream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3intstream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3lexer.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3parser.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3rewritestreams.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3string.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3stringstream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3tokenstream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3treeparser.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++    <ClCompile Include="src\antlr3ucs2inputstream.c">
++      <Filter>Source Files</Filter>
++    </ClCompile>
++  </ItemGroup>
++  <ItemGroup>
++    <ClInclude Include="include\antlr3.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3baserecognizer.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3basetree.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3basetreeadaptor.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3bitset.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3collections.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3commontoken.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3commontree.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3commontreeadaptor.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3commontreenodestream.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3convertutf.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3cyclicdfa.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3debugeventlistener.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3defs.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3encodings.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3errors.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3exception.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3filestream.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3input.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3interfaces.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3intstream.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3lexer.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3memory.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3parser.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3parsetree.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3recognizersharedstate.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3rewritestreams.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3string.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3stringstream.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3tokenstream.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++    <ClInclude Include="include\antlr3treeparser.h">
++      <Filter>Header Files</Filter>
++    </ClInclude>
++  </ItemGroup>
++  <ItemGroup>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\AST.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTDbg.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTParser.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\ASTTreeParser.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\C.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\C\Dbg.stg">
++      <Filter>Templates</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\resources\org\antlr\codegen\templates\ANTLRCore.sti">
++      <Filter>Templates\Interfaces</Filter>
++    </None>
++    <None Include="..\..\tool\src\main\java\org\antlr\codegen\CTarget.java">
++      <Filter>Java</Filter>
++    </None>
++    <None Include="doxygen\atsections.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\build.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\buildrec.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\changes31.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\doxygengroups.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\generate.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\interop.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\mainpage.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\runtime.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++    <None Include="doxygen\using.dox">
++      <Filter>Doxygen</Filter>
++    </None>
++  </ItemGroup>
++</Project>
+\ No newline at end of file
