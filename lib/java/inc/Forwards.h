@@ -1,0 +1,215 @@
+#ifndef _JAVA_Forwards_H_
+#define _JAVA_Forwards_H_
+
+/**
+* \file Forwards.h
+* \brief Contains forward declarations of the classes.
+*/
+
+namespace columbus { namespace java { namespace asg {
+
+  class Algorithm;
+  class AlgorithmPreorder;
+  class ReverseEdges;
+
+  class Visitor;
+  class VisitorAbstractNodes;
+  class VisitorAsgStat;
+  class VisitorGraphml;
+  class VisitorJAVAML;
+  class VisitorFilter;
+  class VisitorReverseEdges;
+  class VisitorSave;
+
+  template <typename T>
+  class ListIterator;
+  class Factory;
+  class Filter;
+  class Range;
+  class RangeListIterator;
+
+  namespace base {
+    class Base;
+    class BlockComment;
+    class Comment;
+    class Commentable;
+    class JavadocComment;
+    class LineComment;
+    class Named;
+    class NonJavadocComment;
+    class Positioned;
+    class PositionedWithoutComment;
+  }
+
+  namespace expr {
+    class AnnotatedTypeExpression;
+    class Annotation;
+    class ArrayAccess;
+    class ArrayTypeExpression;
+    class Assignment;
+    class Binary;
+    class BooleanLiteral;
+    class CharacterLiteral;
+    class ClassLiteral;
+    class Conditional;
+    class DoubleLiteral;
+    class Erroneous;
+    class ErroneousTypeExpression;
+    class Expression;
+    class ExternalTypeExpression;
+    class FieldAccess;
+    class FloatLiteral;
+    class FunctionalExpression;
+    class Identifier;
+    class InfixExpression;
+    class InstanceOf;
+    class IntegerLiteral;
+    class Lambda;
+    class Literal;
+    class LongLiteral;
+    class MarkerAnnotation;
+    class MemberReference;
+    class MethodInvocation;
+    class NewArray;
+    class NewClass;
+    class NormalAnnotation;
+    class NullLiteral;
+    class NumberLiteral;
+    class ParenthesizedExpression;
+    class PolyExpression;
+    class PostfixExpression;
+    class PrefixExpression;
+    class PrimitiveTypeExpression;
+    class QualifiedTypeExpression;
+    class SimpleTypeExpression;
+    class SingleElementAnnotation;
+    class StringLiteral;
+    class Super;
+    class This;
+    class TypeApplyExpression;
+    class TypeCast;
+    class TypeExpression;
+    class TypeIntersectionExpression;
+    class TypeUnionExpression;
+    class Unary;
+    class WildcardExpression;
+  }
+
+  namespace module {
+    class Exports;
+    class ModuleDirective;
+    class Opens;
+    class Provides;
+    class Requires;
+    class Uses;
+  }
+
+  namespace statm {
+    class Assert;
+    class BasicFor;
+    class Block;
+    class Break;
+    class Case;
+    class Continue;
+    class Default;
+    class Do;
+    class Empty;
+    class EnhancedFor;
+    class ExpressionStatement;
+    class For;
+    class Handler;
+    class If;
+    class Iteration;
+    class Jump;
+    class LabeledStatement;
+    class Return;
+    class Selection;
+    class Statement;
+    class Switch;
+    class SwitchLabel;
+    class Synchronized;
+    class Throw;
+    class Try;
+    class While;
+  }
+
+  namespace struc {
+    class AnnotatedElement;
+    class AnnotationType;
+    class AnnotationTypeElement;
+    class AnonymousClass;
+    class Class;
+    class ClassDeclaration;
+    class ClassGeneric;
+    class CompilationUnit;
+    class Declaration;
+    class Enum;
+    class EnumConstant;
+    class GenericDeclaration;
+    class Import;
+    class InitializerBlock;
+    class InstanceInitializerBlock;
+    class Interface;
+    class InterfaceDeclaration;
+    class InterfaceGeneric;
+    class Member;
+    class Method;
+    class MethodDeclaration;
+    class MethodGeneric;
+    class Module;
+    class ModuleDeclaration;
+    class NamedDeclaration;
+    class NormalMethod;
+    class Package;
+    class PackageDeclaration;
+    class Parameter;
+    class Scope;
+    class StaticInitializerBlock;
+    class TypeDeclaration;
+    class TypeParameter;
+    class Variable;
+    class VariableDeclaration;
+  }
+
+  namespace type {
+    class ArrayType;
+    class BooleanType;
+    class BoundedWildcardType;
+    class ByteType;
+    class CharType;
+    class ClassType;
+    class DoubleType;
+    class ErrorType;
+    class FloatType;
+    class IntType;
+    class IntersectionType;
+    class LongType;
+    class LowerBoundedWildcardType;
+    class MethodType;
+    class ModuleType;
+    class NoType;
+    class NullType;
+    class PackageType;
+    class ParameterizedType;
+    class PrimitiveType;
+    class ScopedType;
+    class ShortType;
+    class Type;
+    class TypeVariable;
+    class UnboundedWildcardType;
+    class UnionType;
+    class UpperBoundedWildcardType;
+    class VoidType;
+    class WildcardType;
+  }
+
+
+}}}
+
+namespace columbus { namespace java { namespace linker {
+  class LinkerBase;
+  class VisitorLinker;
+}}}
+
+#endif
+
