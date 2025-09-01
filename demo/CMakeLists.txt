@@ -1,0 +1,8 @@
+file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/demo)
+
+set(ZIP1 ${CMAKE_SOURCE_DIR}/demo/files/log4j-1.2.17.zip)
+set(ZIP2 ${CMAKE_SOURCE_DIR}/demo/files/analyzer_files.zip)
+set(DEST ${CMAKE_BINARY_DIR}/demo)
+
+file(ARCHIVE_EXTRACT INPUT "${ZIP1}" DESTINATION "${DEST}")
+file(ARCHIVE_EXTRACT INPUT "${ZIP2}" DESTINATION "${DEST}")
