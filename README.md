@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# AI4Vuln
-=======
-# General Information
 ## AI4VULN
 ### Requirements
 
@@ -29,4 +25,3 @@ In case of multiple (e.g. 8) processor cores it is faster to use:
 ### Demo usage
 
 Enter the `demo` directory and run the `analyze-dir.sh` script for an example analysis on the apache-log4j-1.2.17 project.
->>>>>>> d0909ea (initial commit)
